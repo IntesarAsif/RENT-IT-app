@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+
+.body{
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+  }
+   
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+  }
+  
+.intro{
+    text-decoration: none;
+    display: flex;
+   
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the contents horizontally */
+}
+
+.intro-left {
+    width: 40%;
+    float: left;
+    padding: 5% 0 0 7%;
+}
+
+.intro-logo {
+    max-width: 700px; /* Set the maximum width of the image 700*/
+    max-height: 600px; /* Set the maximum height of the image 600*/
+}
+
+.intro-right{
+    padding: 5em 0;
+    width: 60%;
+    float: left;
+}
+
+.intro-img{
+    width: 100%;
+    max-height: 500px;
+    opacity: 0.9;
+
+
+}
+.intro-title{  
+
+
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+
+
+}
+
+
+.intro-des{
+    padding: 2% 10%;
+    text-align: left;
+    font-size: 22px;
+}
+
+
+/*  */
+.featured{
+    background: rgba(255, 255, 255, 0.61);
+    overflow: hidden;
+}
+.fe{
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 5em 0em;
+}
+.fea-title{
+    text-align: center;
+    font-size: 45px;
+}
+
+
+.rent-card{
+    box-shadow:  0 4px 8px 0 rgba(255, 249, 249, 0.2);
+    display: grid;
+    padding: 3em;
+
+
+    display: flex;
+}
+
+
+.mini-card{
+
+
+    float: center;
+   /* padding: 3em;
+    margin: 2rem;*/
+    transition: 0.3s;
+    box-shadow:  0 4px 8px 0 rgba(255, 249, 249, 0.2);
+    width: 400px;
+    height: 250px;
+}
+.mini-card:hover{
+    transform: scale(1.15);
+}
+
+.mini-img {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+.img {
+    text-align: center;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 10px;
+}
+
+
+.des{
+    padding-top: 4.5em;
+    margin: 2rem;
+}
+
+
+
+/* Footer */
+
+
+.footer{
+    background-color: #000000;
+    overflow: hidden;
+    padding: 1.5em 0 4em 0;
+    /* font-family: $default-font; */
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+
+.foot-box {
+    float: left;
+    width: 45%;
+    margin-left: 20px;
+}
+
+
+.foot-left{
+    /* // display: flex; */
+    padding: 2em 3em 0;
+
+
+}
+.foot-right{
+    /* // display: flex; */
+    padding: 2.5em 3em 2em;
+}
+
+
+.foot-title{
+    color: #ffffff;
+    font-size: 18px;
+}
+.foot-info{
+    padding-top: 3px;    
+}
+.foot-info a{
+    margin-top: 4px;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+.foot-social{
+    padding-left: 3em;
+}
+.foot-social .fab,
+.foot-social .fas{
+    font-size: 30px;
+    color: #ffffff;
+    padding-right: 4px;
+}
+.foot-social .fab:hover,
+.foot-social .fas:hover{    
+    transition: .5s;
+    transform: scale(1.3);
+    /* color: $primary-color; */
+}
+/* Login */
+.login{
+    overflow: hidden;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #000000;
+    margin-top: -1.5em;
+}
+
+
+.log-box {
+    box-sizing: border-box;
+    background-color: #eceae4;
+    border-radius: 25px;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 1em 3em; /* Adjust padding as needed */
+    margin: 10px auto; /* Center horizontally and adjust margin as needed */
+    width: 50%; /* Adjust the width as needed */
+}
+
+
+.log-box h2{
+    color: #000000;
+    padding-bottom: 1em;
+}
+.log-box a{    
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: normal;
+}
+.log-box-a{
+    padding-top: 1em;
+}
+
+
+.register{
+    padding: 10em 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.login-idk {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds screen height */
+}
+
+
+
+
+
+.login-input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:50px;
+    border:rgb(190, 190, 190);
+    border-radius: 2rem;
+    margin-bottom: 10px;
+
+    width: 100%;
+    padding: 10px;
+
+}
+
+
+.submit{
+    background-color: #000000;
+    color: #ffffff;
+}
+.submit:hover{
+    /* transform: scale(1.15); */
+    background-color: #bcaeae;
+    color: #000000;
+
+
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+  }
+  
+  #location {
+    width: 60%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #search-btn {
+    background-color: #fffff;
+    color: black;
+    padding:8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #search-btn:hover {
+    background-color: #4c98af;
+  }
+  
+  #search-results {
+    margin-top: 5px;
+  }
+/* rental application form*/
+.rental-form {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin: 0; /* Resetting the margin to zero */
+}
+
+
+  /**/
+  .submit-button {
+    background-color: #fffff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+
+
+.ownerprofile{
+margin: 4rem;
+
+}
+
+  

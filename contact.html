@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us Form</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- style.css link -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="left-space"></div>
+        <div class="left-container">
+            <!-- Left-side content -->
+            <p><i class="fas fa-map-marker-alt"></i> Company Address <br><span style="color: #e3e0e0;">Mirpur DOHS, Road 11, Avenue 9, House 764 <br> Apex Group Ltd</span></p>
+            <p><i class="fas fa-phone"></i> Contact Number <br><span style="color: #3bc13b;">+88015737295934</span></p>
+            <p><i class="fas fa-envelope"></i> General Support Email <br><span style="color: #3bc13b;">Apexcustomercare@gmail.com</span></p>
+        </div>
+        <div class="right-container">
+            <!-- Right-side content -->
+            <h1 class="send-message" style="font-size: 25px; margin-top: 10px; position: top;">SEND US A MESSAGE</h1>
+            <form action="submit.php" method="post">
+                <div class="form-group">
+                    <label for="fname">Tell us your name*</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="fname" name="fname" class="form-control" required placeholder="First Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="lname" name="lname" class="form-control" required placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter your email*</label>
+                    <input type="email" id="email" name="email" class="form-control" required placeholder="Eg: example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Enter your phone number</label>
+                    <input type="text" id="phone" name="phone" class="form-control" required placeholder="Eg: +18000000000">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required placeholder="Write us a message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
+        <div class="right-space"></div>
+    </div>
+
+    <!-- Add the Bootstrap JS and jQuery scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.outer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.left-container {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("contact.jpeg") no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.left-container p {
+    margin: 40px 0;
+}
+
+.left-container span {
+    padding-bottom: 10px;
+}
+.right-container {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-space,
+.right-space {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}

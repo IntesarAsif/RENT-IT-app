@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Rent IT</title>
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Rent IT</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="addapartment.html">Add Apartment</a></li>
+      <li class="nav-item"><a class="nav-link" href="Login.html">Sign In</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="adminLogin.html">Admin</a></li>
+    </ul>
+    <div class="search-container">
+      <form>
+        <select id="location">
+          <option value="">Enter a location...</option>
+          <option value="gulshan">Gulshan</option>
+          <option value="uttara">Uttara</option>
+          <option value="bashundhara">Bashundhara</option>
+        </select>
+        <input type="button" value="Search" onclick="search()" id="search-btn">
+      </form>
+      <div id="search-results"></div>
+    </div>
+  </nav>
+ 
+    <div class="intro-img-div">
+      <img class="intro-img" src="./R.jpeg" alt="">            
+  </div>
+
+  <div class="featured">
+    <div class="fe">
+      <div class="fea-title">
+        Featured projects
+      </div>
+      <div class="rent-card-container">
+        <div class="rent-card">
+          <!-- Rent cards go here -->
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a6.html"><img src="1.webp" alt="" class="img" /> </a>
+            </div>
+            <div class="des">
+              <b>
+                <p>Valeria</p>
+                <p>RENT: 55K</p>
+                <p>Bashundhara R/A</p>
+              </b>
+            </div>
+          </div>
+
+
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a1.html"><img src="2.webp" alt="" class="img" /></a>
+            </div>
+            <div class="des">
+                <b><p>Edison Amour</p>
+                <p>RENT: 65K</p>
+                <p>Bashundhara R/A</p></b>
+                
+            </div>
+          </div>
+         
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a2.html"><img src="3.webp" alt="" class="img" /></a>
+            </div>
+            <div class="des">
+                <b><p>Dulce Domi</p>
+                <p>RENT: 95K</p>
+                <p>Uttara</p></b>
+            </div>
+          </div>
+
+
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a3.html"><img src="4.webp" alt="" class="img" /></a>
+            </div>
+            <div class="des">
+                <b><p>Prime View</p>
+                <p>RENT: 70K</p>
+                <p>Uttara</p></b>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a4.html"><img src="2.webp" alt="" class="img" /></a>
+            </div>
+            <div class="des">
+                <b><p>Rose Cottage</p>
+                <p>RENT: 85K</p>
+                <p>Gulshan</p></b>
+            </div>
+          </div>
+
+
+          <div class="mini-card">
+            <div class="mini-img">
+              <a href="./a5.html"><img src="1.webp" alt="" class="img" /></a>
+            </div>
+            <div class="des">
+                <b><p>Magnifico</p>
+                <p>RENT: 75K</p>
+                <p>Gulshan</p></b>
+            </div>
+          </div>
+               
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="footer" id="Footer">
+      <div>
+          <div class="foot">
+              <div class="foot-box">
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Address</b></div>
+                      <div class="foot-info">
+                          Plot 16 Aftab Uddin Ahmed Rd, Dhaka 1229
+                      </div>
+                  </div>
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Email</b></div>
+                      <div class="foot-info">
+                          info@rentit.com
+                      </div>
+                  </div>
+                  <div class="foot-left">
+                      <div class="foot-title"><b>Hotline</b></div>
+                      <div class="foot-info">
+                          23464
+                      </div>
+                  </div>
+              </div>
+              <div class="foot-box">
+                  <div class="foot-right">
+                      <div class="foot-title"><b> Customer Service </b></div>
+                      <div class="foot-info">
+                          <p><a href="">Terms & Conditions</a></p>
+                          <p><a href="">Return Policy</a></p>
+                          <p><a href="">Privacy Policy</a></p>
+                      </div>
+                  </div>
+                  <div class="foot-social">
+                    <a href="#"
+                        ><i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#"
+                        ><i class="fas fa-code"></i>
+                    </a>
+                    <a
+                        href="#"
+                        ><i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+    // Check if the user is logged in before performing the search
+    function checkLoggedInForSearch() {
+      fetch('session_status.php')
+        .then(response => response.text())
+        .then(data => {
+          if (data !== "true") {
+            // Redirect to login page if not logged in
+            window.location.href = "login.html";
+          }
+        });
+    }
+
+    function search() {
+      // Check if the user is logged in before performing the search
+      checkLoggedInForSearch();
+
+      var location = document.getElementById("location").value;
+
+      if (location === "gulshan") {
+        window.location.href = "/Gulshanprojects.html";
+      } else if (location === "uttara") {
+        window.location.href = "/Uttaraprojects.html";
+      } else if (location === "bashundhara") {
+        window.location.href = "/Bashundharaprojects.html";
+      }
+    }
+  </script>
+</body>
+</html>

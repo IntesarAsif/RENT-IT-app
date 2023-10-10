@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align contents from the left */
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.project-listings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    width: 100vw;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.project-info {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text content */
+}
+
+.project-info img {
+    max-width: 100%; /* Make sure image fits the container width */
+    height: auto;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}

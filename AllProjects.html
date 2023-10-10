@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Projects</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="AllProjects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="admin_dashboard.html">Rent IT</a>
+        </div>
+        <form class="search-form">
+            <select id="location">
+                <option value="">Enter a location...</option>
+                <option value="gulshan">Gulshan</option>
+                <option value="uttara">Uttara</option>
+                <option value="bashundhara">Bashundhara</option>
+            </select>
+            <input type="button" value="Search" onclick="search()" id="search-btn">
+        </form>
+    </nav>
+
+    <!-- Project Listings Container -->
+    <div class="project-listings">
+        <div class="project-info" id="apartment1"></div>
+        <div class="project-info" id="apartment2"></div>
+        <div class="project-info" id="apartment3"></div>
+        <div class="project-info" id="apartment4"></div>
+        <div class="project-info" id="apartment5"></div>
+        <div class="project-info" id="apartment6"></div>
+    </div>
+
+    <script src="loadApartmentBashundhara.js"></script>
+    <script src="loadApartmentUttara.js"></script>
+    <script src="loadApartmentGulshan.js"></script>
+
+    <script>
+        // Your JavaScript functions here
+        
+        function search() {
+
+            var location = document.getElementById("location").value;
+
+            if (location === "gulshan") {
+                window.location.href = "Gulshanprojects.html";
+            } else if (location === "uttara") {
+                window.location.href = "Uttaraprojects.html";
+            } else if (location === "bashundhara") {
+                window.location.href = "Bashundharaprojects.html";
+            }
+        }
+
+        // Your other JavaScript code here
+    </script>
+</body>
+</html>
